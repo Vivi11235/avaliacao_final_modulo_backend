@@ -218,11 +218,8 @@ app.delete('/recados/:id', (request, response) => {
 
     listaRecados.splice(recadoExiste, 1)
 
-    console.log(listaRecados)
-
     return response.status(200).json({
         sucess: true,
         message: 'Recado deletado com sucesso',
-        data: recado
     })
 })
