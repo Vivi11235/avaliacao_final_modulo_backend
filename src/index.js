@@ -1,6 +1,6 @@
 import express from 'express';
 
-const crypto = require('node:crypto')
+import crypto from 'node:crypto'
 
 const app = express();
 
