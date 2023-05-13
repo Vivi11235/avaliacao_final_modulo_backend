@@ -17,7 +17,7 @@ const listaUsuarios = [];
 app.post('/cadastro', (request, response) => {
     const dados = request.body
 
-    const usuario = listaUsuarios.find((user) => user.email === data.email)
+    const usuario = listaUsuarios.find((user) => user.email === dados.email)
 
     if(usuario){
         return response.status(400).json({
