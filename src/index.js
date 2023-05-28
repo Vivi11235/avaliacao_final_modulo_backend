@@ -1,10 +1,14 @@
-import express from 'express';
+import express from 'express'
+
+import cors from 'cors'
 
 import crypto from 'node:crypto'
 
 const app = express();
 
 app.use(express.json());
+
+app.use(cors())
 
 app.get('/', (request, response) => {
     return response.status(200).send('<h1>Bem-vindo ao sistema de cadastro de recados!</h1><p>Proceda ao seu cadastro:</p>');
